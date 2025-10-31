@@ -96,6 +96,34 @@ export default function Portfolio() {
                         garagem="-"
                         gourmet="-"
                     />
+                    <House 
+                        imageUrl="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/59fbe6f7-055a-4dc7-9419-75fcbc831100/public"
+                        nameHouse="Chalé Oiti"
+                        typeHouse="Padrão"
+                        areaTotal="33,00"
+                        larguraXFundo="8,00 x 3,75"
+                        loteMinimo="12 x 15"
+                        pavimentos="01"
+                        quartos="01"
+                        suites="-"
+                        banheiros="01"
+                        garagem="-"
+                        gourmet="-"
+                    />
+                    <House 
+                        imageUrl="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/94049068-fdfa-4ff8-cd77-c4059079c200/public"
+                        nameHouse="Chalé Aroeira"
+                        typeHouse="Padrão"
+                        areaTotal="24,00"
+                        larguraXFundo="3,30 x 7,35"
+                        loteMinimo="6 x 15"
+                        pavimentos="01"
+                        quartos="01"
+                        suites="-"
+                        banheiros="01"
+                        garagem="-"
+                        gourmet="-"
+                    />
                 </Houses>
             </Container>
         </>

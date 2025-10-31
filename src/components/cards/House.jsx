@@ -10,7 +10,7 @@ const Content = styled.div`
     justify-content: space-between;
     width: 100%;
     padding: 8px;
-    border-radius: 16px;
+    border-radius: 22px;
     background-color: var(--color--black);
     height: 280px;
     gap: 12px;
@@ -91,7 +91,7 @@ const VerMais = styled.button`
     padding: 12px;
     border: none;
     font-size: 16px;
-    border-radius: 12px;
+    border-radius: 16px;
     background-color: var(--color--white);
     display: none;
 
@@ -109,7 +109,7 @@ const Info = styled.div`
     flex: 1;
     gap: 18px;
     padding: 12px;
-    border-radius: 12px;
+    border-radius: 18px;
     background: var(--color--white);
 
     @media (max-width: 768px){
@@ -210,7 +210,7 @@ export default function House({
         <>
             <Content>
                 <Image data-aos="zoom-in">
-                    <img src={imageUrl} alt={nameHouse} />
+                    <img src={imageUrl} alt={nameHouse}/>
                 </Image>
                 <Name data-aos="fade-up">
                     <aside>

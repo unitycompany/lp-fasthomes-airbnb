@@ -1,5 +1,4 @@
 import React from "react";
-import { MdStarRate } from "react-icons/md";
 import styled from "styled-components";
 
 const Content = styled.div`
@@ -15,9 +14,9 @@ const Content = styled.div`
 
     @media (max-width: 768px){
         position: absolute;
-        width: max-content;
-        max-width: fit-content;
+        align-items: center;
         top: 20px;
+        width: auto;
         right: 20px;
         border-radius: 12px;
         z-index: 2;
@@ -34,6 +33,7 @@ const Content = styled.div`
         @media (max-width: 768px){
             fill: var(--color--white);
             height: 30px;
+            width: 30px;
         }
     }
 
@@ -43,6 +43,7 @@ const Content = styled.div`
         align-items: flex-start;
         justify-content: center;
         gap: 2px;
+        width: auto;
 
         & span {
             font-size: 18px;

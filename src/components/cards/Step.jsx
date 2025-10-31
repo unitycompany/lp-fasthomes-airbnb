@@ -9,7 +9,6 @@ const Content = styled.div`
     flex-direction: column;
     height: auto;
     background: var(--color--black);
-    border: 2px solid var(--color--green);
     border-radius: 22px;
     padding: 22px 18px;
     gap: 18px;

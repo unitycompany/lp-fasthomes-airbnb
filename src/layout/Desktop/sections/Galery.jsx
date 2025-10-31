@@ -82,7 +82,7 @@ export default function AirbnbGalery () {
             <Container>
                 <Texts>
                     <Title 
-                        children={`Chalé Araucária`}
+                        children={`Chalé Oiti`}
                         fontSize="32px"
                     />
                     <Actions>
@@ -108,19 +108,19 @@ export default function AirbnbGalery () {
                 </Texts>
                 <Images>
                     <Image data-aos="zoom-in">
-                        <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/795a497e-4268-40dc-d493-39b6ced14900/public" alt="" />
+                        <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/59fbe6f7-055a-4dc7-9419-75fcbc831100/public" alt="" />
                     </Image>
                     <Image data-aos="zoom-in" data-aos-delay="100">
-                        <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/51db3bc6-89d7-49e4-2849-5292474c5100/public" alt="" />
+                        <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/9f058ed0-8b43-4432-fb4b-137fe2398800/public" alt="" />
                     </Image>
                     <Image data-aos="zoom-in" data-aos-delay="200">
-                        <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/2edf15fc-4fec-4652-8597-7519acefec00/public" alt="" />
+                        <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/f34c6265-3b90-44cc-67b5-d6c6087d5700/public" alt="" />
                     </Image>
                     <Image data-aos="zoom-in" data-aos-delay="300">
-                        <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/1cf9ca01-cadc-43ed-092e-6a61d87e9400/public" alt="" />
+                        <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/871a3aa2-9db5-4767-ee9e-cf0a19ed3a00/public" alt="" />
                     </Image>
                     <Image data-aos="zoom-in" data-aos-delay="400">
-                        <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/d3d23dd0-94d8-4172-acfe-8bed6edc1f00/public" alt="" />
+                        <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/3537856c-a77b-49b1-deba-39683036af00/public" alt="" />
                     </Image>
                 </Images>
             </Container>
