@@ -124,6 +124,20 @@ export default function Portfolio() {
                         garagem="-"
                         gourmet="-"
                     />
+                    <House 
+                        imageUrl="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/71f455ea-11eb-48f0-4a07-56a2d981ac00/public"
+                        nameHouse="Chalé Araça"
+                        typeHouse="A-frame"
+                        areaTotal="31,00"
+                        larguraXFundo="5,00 x 6,30"
+                        loteMinimo="8 x 9"
+                        pavimentos="01"
+                        quartos="00"
+                        suites="01"
+                        banheiros="01"
+                        garagem="-"
+                        gourmet="-"
+                    />
                 </Houses>
             </Container>
         </>

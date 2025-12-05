@@ -144,7 +144,7 @@ export default function Hero() {
                     </Carousel>
                 </Texts>
                 <Image data-aos="zoom-in">
-                    <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/795a497e-4268-40dc-d493-39b6ced14900/public" alt="" />
+                    <img src="https://imagedelivery.net/1n9Gwvykoj9c9m8C_4GsGA/ff11b824-9aa6-49c6-5cd4-ee7cf426f200/public" alt="" />
                 </Image>
             </Container>
         </>
