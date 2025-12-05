@@ -103,29 +103,25 @@ export default function Form() {
         }, 0);
     };
 
+    const submitForm = () => {
+        if (submitting) return;
+        if (isNameValid(values.name) && isEmailValid(values.email) && isTelValid(values.tel)) {
+            setSent(true);
+            sendToWebhook(values);
+        } else {
+            if (!isNameValid(values.name)) setStep(1);
+            else if (!isEmailValid(values.email)) setStep(2);
+            else setStep(3);
+        }
+    };
+
     const handleFinish = () => {
-        setStep(3);
-        // finalize: submit the form to webhook
-        // set UI to sent immediately and send in background
-        setSent(true);
-        sendToWebhook(values);
+        submitForm();
     };
 
     const handleSubmit = (e) => {
-        // prevent default full form submit for now
         e.preventDefault();
-        if (submitting) return;
-        // if on last step and valid, send values to webhook
-        if (isNameValid(values.name) && isEmailValid(values.email) && isTelValid(values.tel)) {
-            // show simple sent UI immediately, then send
-            setSent(true);
-            sendToWebhook(values);
-            return;
-        }
-        // otherwise move to first invalid step
-        if (!isNameValid(values.name)) setStep(1);
-        else if (!isEmailValid(values.email)) setStep(2);
-        else setStep(3);
+        submitForm();
     };
 
     // Validation helpers
@@ -193,12 +189,12 @@ export default function Form() {
             submittedAt,
             source: typeof window !== "undefined" ? window.location.origin + window.location.pathname : "",
             ...utm,
-            webhookUrl: "https://n8n.unitycompany.com.br/webhook/form-fasthomes-lp",
+            webhookUrl: "https://n8n.unitycompany.com.br/webhook/form-fasthomes-landingpage",
             executionMode: "production",
         };
 
         try {
-            const res = await fetch("https://n8n.unitycompany.com.br/webhook/form-fasthomes-lp", {
+            const res = await fetch("https://n8n.unitycompany.com.br/webhook/form-fasthomes-landingpage", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
