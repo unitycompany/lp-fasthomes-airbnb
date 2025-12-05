@@ -116,7 +116,12 @@ export default function Form() {
     };
 
     const handleFinish = () => {
-        submitForm();
+        const form = document.getElementById('contactForm');
+        if (form && typeof form.requestSubmit === 'function') {
+            form.requestSubmit();
+        } else {
+            submitForm();
+        }
     };
 
     const handleSubmit = (e) => {
@@ -225,7 +230,7 @@ export default function Form() {
                 {sent ? (
                     <div style={{ padding: 0, textAlign: 'left', color: 'var(--color--black)' }}>Obrigado por enviar o formulário, em breve nosso time entrará em contato com você!</div>
                 ) : (
-                    <ContactForm id="contactForm" onSubmit={handleSubmit} data-aos="fade-up">
+                    <ContactForm id="contactForm" onSubmit={handleSubmit} data-aos="fade-up" noValidate>
                     <Input 
                         questionNumber="1."
                         children={`Olá, para inicar, qual o seu nome?`}
